@@ -9,7 +9,7 @@ namespace extra {
 
         public class externalcmd : ICommand    {
 
-            public externalcmd(List<string> input) {
+            public void Run(List<string> input) {
                 input.ForEach(x => Console.WriteLine("-" + x));
             }
         }
